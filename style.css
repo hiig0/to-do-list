@@ -1,0 +1,247 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9fc; 
+    color: #2c3e50; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2980b9;
+    border-bottom: 2px solid #fff;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #000000 !important;
+}
+
+.navbar .nav-link:hover {
+    color: #f39c12 !important;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #2980b9;
+    font-size: 36px;
+}
+
+h3 {
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #d1e7f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.card-header {
+    background-color: #2980b9;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-footer {
+    background-color: #f4f9fc;
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #d1e7f0;
+    border-radius: 0 0 10px 10px;
+}
+
+.list-group-item {
+    background-color: #e8f6f9;
+    border: 1px solid #d1e7f0;
+    color: #2c3e50;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #d1e7f0;
+}
+
+.list-group-item.completed {
+    text-decoration: line-through;
+    background-color: #d1e7f0;
+    color: #8395a7;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #3498db;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border: none;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.task-enter-animation {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* Ajustes para dispositivos com até 768px (tablets e telas menores) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .card-header {
+        font-size: 18px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .list-group-item {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+}
+
+/* Ajustes para dispositivos com até 480px (smartphones) */
+@media (max-width: 480px) {
+    .navbar .navbar-brand {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .btn-primary, .btn-danger, .btn-success {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card-header {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .list-group-item {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .navbar .navbar-toggler-icon {
+        width: 30px; 
+        height: 20px;
+    }
+
+    #taskInput{
+        width: 100%;
+
+    }
+
+}
+
+/* Ajuste para a página inicial (campo de entrada de tarefas) */
+@media (max-width: 576px) {
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group input {
+        width: 100%; 
+    }
+
+    .input-group button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
